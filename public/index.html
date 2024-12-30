@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Lite</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+    
+<body>
+    <!-- Login Box -->
+    <div class="login">
+        <input type="text" placeholder="Enter Username" class="username">
+        <button class="login-btn">Login</button>
+    </div>
+
+    <!-- Application -->
+    <div class="chat-application">
+        <H2 class="application-heading">WhatsApp Lite <span style="color: red; font-size: 20px;"> Active Users: </span> <span style="color: red; font-size: 20px;" class="active-users"></span> </H2> 
+
+        <!-- Chat Box -->
+        <div class="chat-box">
+
+            <!-- User Details -->
+            <div class="user-details">
+                <div class="current-user">
+                </div>
+                <div class="all-users-status">
+                </div>
+            </div>
+
+            <!-- Message box -->
+            <div class="message-box">
+
+                <!-- Chat Box -->
+                 <div class="chats">
+                 </div>
+
+                <!-- Send Message -->
+                <div class="send-message">
+                    <input type="text" placeholder="Type a message" class="message-input">
+                    <span class="send-button">
+                        <button class="gt-logo">&gt</button>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
